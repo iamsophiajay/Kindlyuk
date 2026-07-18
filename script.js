@@ -1,27 +1,23 @@
 /* =========================================================
-   SUPABASE CONFIG
-   Replace these two values with your project's URL and anon
-   public key (Project Settings → API in the Supabase dashboard).
-   The anon key is safe to expose in client code — row-level
-   security policies (see database.sql) control what it can do.
+   FORMSPREE CONFIG
+   All forms on the site submit to this single Formspree
+   endpoint. Each submission includes a "form_name" field
+   so you can tell which form it came from inside Formspree.
    ========================================================= */
-const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL'; // e.g. https://xxxxx.supabase.co
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mojgdqdq';
 
-async function supabaseInsert(table, row){
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}`, {
+async function formspreeSubmit(formName, row){
+  const res = await fetch(FORMSPREE_ENDPOINT, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'apikey': SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-      'Prefer': 'return=minimal'
+      'Accept': 'application/json'
     },
-    body: JSON.stringify(row)
+    body: JSON.stringify({ form_name: formName, ...row })
   });
   if(!res.ok){
-    const text = await res.text().catch(()=> '');
-    throw new Error(`Supabase insert failed (${res.status}): ${text}`);
+    const data = await res.json().catch(()=> ({}));
+    throw new Error(`Formspree submit failed (${res.status}): ${JSON.stringify(data)}`);
   }
   return true;
 }
@@ -281,7 +277,7 @@ wlForm.addEventListener('submit', async function(e){
   btn.textContent='Submitting…'; btn.disabled=true;
   wlError.style.display='none';
   try{
-    await supabaseInsert('waitlist_signups', {
+    await formspreeSubmit('waitlist_signup', {
       first_name: fd.get('first_name'),
       last_name: fd.get('last_name'),
       email: fd.get('email'),
@@ -312,7 +308,7 @@ contactForm.addEventListener('submit', async function(e){
   btn.textContent='Sending…'; btn.disabled=true;
   contactError.style.display='none';
   try{
-    await supabaseInsert('contact_messages', {
+    await formspreeSubmit('contact_message', {
       name: fd.get('name'),
       email: fd.get('email'),
       country: fd.get('country') || null,
@@ -335,7 +331,7 @@ document.getElementById('footer-newsletter-btn').addEventListener('click', async
   const email = input.value.trim();
   if(!email) return;
   try{
-    await supabaseInsert('newsletter_subscribers', { email });
+    await formspreeSubmit('newsletter_subscriber', { email });
     input.value=''; input.placeholder='Subscribed ✓';
     setTimeout(()=>input.placeholder='your@email.com', 2500);
   }catch(err){
