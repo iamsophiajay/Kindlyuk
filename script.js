@@ -63,12 +63,12 @@ const testimonials = [
 ];
 
 const faqs = [
-  {q:'Who will I be speaking with?',a:"Every Kindly member goes through identity verification. We look for people who are curious, respectful, and genuinely interested in others. You'll see a short profile before any conversation is confirmed."},
+  {q:'Who will I be speaking with?',a:"Every Kindly listener goes through identity verification. We look for people who are curious, respectful, and genuinely interested in having a conversation. You'll see a short profile before any conversation is confirmed."},
   {q:'How long does a conversation last?',a:"Most run between thirty minutes and an hour, though plenty of members end up talking much longer. There's no hard stop — we simply arrange the introduction and the time."},
   {q:'Is Kindly only for older adults?',a:'Not at all. Kindly is for anyone who values unhurried conversation. Our members range from students to retirees, and the mix is part of what makes it worthwhile.'},
   {q:'How is Kindly different from social media?',a:'Social media is built for scrolling and broadcasting. Kindly is built for one conversation at a time. There are no feeds, no followers, and nothing to perform.'},
   {q:'Can I choose what I talk about?',a:'Yes. You tell us the topic and your availability, and we arrange a conversation with another member who has requested the same topic.'},
-  {q:'Is Kindly free to join?',a:"Joining the waitlist and creating a profile is free. We're exploring a simple subscription for future releases, with generous terms for early members."},
+  {q:'Is Kindly free to join?',a:"To get started and create a profile is free. We're exploring a simple subscription for future releases, with generous terms for early members."},
   {q:"What if the conversation doesn't go well?",a:"It happens occasionally, and that's fine. Let us know and we'll arrange a different conversation. No questions asked."},
 ];
 
