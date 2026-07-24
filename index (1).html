@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kindly A Friendly Voice.</title>
+<meta name="description" content="Kindly arranges genuine conversations between people and our DBS checked listeners.">
+<meta property="og:title" content="Kindly — The best conversations are the ones you never expected.">
+<meta property="og:description" content="Kindly arranges genuine conversations between people who share an interest.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://kindlyuk.com/">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<nav id="navbar">
+  <a href="#home" class="nav-logo" data-nav>
+    <img src="images/kindly-logo-green.png" alt="Kindly" class="nav-logo-img">
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><button class="nav-link" data-target="how-it-works">How It Works</button></li>
+    <li><button class="nav-link" data-target="topics">Topics</button></li>
+    <li><button class="nav-link" data-target="community">Community</button></li>
+    <li><button class="nav-link" data-target="articles">Stories</button></li>
+    <li><button class="nav-link" data-target="faq">FAQs</button></li>
+    <li><button class="nav-link" data-target="contact">Contact</button></li>
+  </ul>
+  <div class="nav-cta">
+    <button class="btn-ghost" data-target="Get Started">Sign In</button>
+    <button class="btn-primary" data-target="Get Started">Get Started</button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation" aria-hidden="true">
+  <button data-target="how-it-works">How It Works</button>
+  <button data-target="topics">Topics</button>
+  <button data-target="community">Community</button>
+  <button data-target="articles">Stories</button>
+  <button data-target="faq">FAQs</button>
+  <button data-target="contact">Contact</button>
+  <button class="btn-primary" data-target="Get Started">Join Get Started</button>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-label reveal visible">
+        <div class="hero-dot"></div>
+        Now welcoming early members &middot; UK &amp; worldwide
+      </div>
+      <h1 class="hero-headline reveal visible">The best conversations are the ones you <em>never expected.</em></h1>
+      <p class="hero-sub reveal visible">Kindly arranges genuine conversations between people who share an interest. Tell us what you'd like to talk about, and we'll connect your request with another member who feels the same.</p>
+      <div class="hero-cta-group reveal visible">
+        <button class="btn-hero" data-target="Get Started">Book a Conversation <span class="arrow">&rarr;</span></button>
+        <button class="btn-outline" data-target="topics">Explore Topics</button>
+      </div>
+      <div class="hero-trust reveal visible">
+        <div class="trust-avatars">
+          <img src="https://picsum.photos/seed/kindly-margaret/80/80" alt="" loading="lazy">
+          <img src="https://picsum.photos/seed/kindly-avatar-1/80/80" alt="" loading="lazy">
+          <img src="https://picsum.photos/seed/kindly-avatar-2/80/80" alt="" loading="lazy">
+        </div>
+        <p class="hero-trust-text"><strong>500+</strong> members already having real conversations</p>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal visible d2">
+      <div class="float-card float-card-1">
+        <img class="fc-avatar" src="https://picsum.photos/seed/kindly-avatar-3/80/80" alt="" loading="lazy">
+        <div class="fc-text"><p>Conversation requested</p><span>Topic: Travel &amp; culture</span></div>
+      </div>
+      <div class="hero-photo-main">
+        <img src="https://picsum.photos/seed/kindly-hero-window/900/1000" alt="A woman sitting by a window, smiling mid-conversation on the phone" loading="lazy">
+      </div>
+      <div class="hero-photo-small">
+        <img src="https://picsum.photos/seed/kindly-tea-laugh/700/600" alt="An older man laughing while holding a cup of tea" loading="lazy">
+      </div>
+      <div class="float-card float-card-2">
+        <img class="fc-avatar" src="https://picsum.photos/seed/kindly-avatar-4/80/80" alt="" loading="lazy">
+        <div class="fc-text"><p>Connected just now</p><span>Two members, one topic</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>"A proper conversation, not a chat."</span>
+    <span>Arranged, never algorithmic.</span>
+    <span>500+ members across 3 countries.</span>
+    <span>No swiping. No profiles to perform.</span>
+    <span>"A proper conversation, not a chat."</span>
+    <span>Arranged, never algorithmic.</span>
+    <span>500+ members across 3 countries.</span>
+    <span>No swiping. No profiles to perform.</span>
+  </div>
+</div>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">How it works</p>
+      <h2 class="h2">Three steps to a conversation worth having.</h2>
+      <p class="sub" style="margin-top:16px;">No lengthy profiles to perform. No swiping. Just a topic you care about, and a conversation we arrange on your behalf.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal d1">
+        <div class="postmark">1</div>
+        <div>
+          <h3 class="how-card-title">Choose a topic you enjoy</h3>
+          <p class="how-card-text">Browse dozens of conversation topics — from travel and food to business and culture. Pick whatever's on your mind today.</p>
+        </div>
+      </div>
+      <div class="how-card reveal d2">
+        <div class="postmark">2</div>
+        <div>
+          <h3 class="how-card-title">Request a conversation</h3>
+          <p class="how-card-text">Tell us when you're free and what you'd like to discuss. We'll arrange a conversation with someone who shares your interest.</p>
+        </div>
+      </div>
+      <div class="how-card reveal d3">
+        <div class="postmark">3</div>
+        <div>
+          <h3 class="how-card-title">Talk, and discover</h3>
+          <p class="how-card-text">Your conversation happens by phone or video, at a time that suits you both. Walk away with a new perspective worth keeping.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOPICS ============ -->
+<section class="topics-section" id="topics">
+  <div class="container">
+    <div class="topics-header">
+      <div class="reveal">
+        <p class="eyebrow">Topics</p>
+        <h2 class="h2">What's on your mind?</h2>
+        <p class="sub" style="margin-top:12px;">Every conversation starts with something real. Choose a topic and we'll arrange an introduction to someone equally curious about it.</p>
+      </div>
+      <div class="reveal d2"><button class="btn-outline" data-target="Get Started">View all topics &rarr;</button></div>
+    </div>
+    <div class="topics-grid" id="topics-grid"></div>
+  </div>
+</section>
+
+<!-- ============ WHY KINDLY ============ -->
+<section class="why-section">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div class="reveal">
+          <p class="eyebrow" style="color:var(--sage);">Why Kindly</p>
+          <h2 class="why-headline">Life got fast. <em>Kindly slows it down.</em></h2>
+          <p class="why-text">Your diary is full. So is everyone else's. Kindly simply arranges the time and the introduction for a conversation that might otherwise never happen.</p>
+        </div>
+        <div class="why-features reveal d1">
+          <div class="why-feature">
+            <div class="why-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 11.5a8.4 8.4 0 01-1.9 5.4 8.5 8.5 0 01-9.3 2.7L4 21l1.5-5.3A8.5 8.5 0 0119 5.1a8.4 8.4 0 012 6.4z"/></svg></div>
+            <div class="why-feature-text"><h4>A real conversation, not a feed</h4><p>No scrolling, no likes. Just a person, a topic, and uninterrupted time to talk.</p></div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 12l2 2 4-4M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg></div>
+            <div class="why-feature-text"><h4>Every Kindly listener is verified</h4><p>Each person who joins Kindly agrees to our community values and is DBS checked before they can take part.</p></div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg></div>
+            <div class="why-feature-text"><h4>Interesting people, everywhere</h4><p>From retired teachers to young entrepreneurs, our community holds a wide range of stories and experience.</p></div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <div class="why-feature-text"><h4>No pressure, ever</h4><p>Conversations happen on your schedule. No commitments and no follow-up unless you'd like one.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="why-photo reveal d2">
+        <img src="https://picsum.photos/seed/kindly-margaret/800/900" alt="A woman relaxing in an armchair, deep in a phone conversation" loading="lazy">
+        <div class="why-photo-caption">
+          <img src="https://picsum.photos/seed/kindly-margaret/120/120" alt="">
+          <div class="why-photo-caption-text"><p>Margaret, 67</p><span>Former art teacher &middot; Edinburgh</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES / SAFETY ============ -->
+<section class="values-section" id="values">
+  <div class="container">
+    <div class="reveal" style="max-width:600px;">
+      <p class="eyebrow">Our community values</p>
+      <h2 class="h2">How we keep conversations safe.</h2>
+      <p class="sub" style="margin-top:14px;">Every member agrees to the same simple principles before they're allowed to take part.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal d1">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 12l2 2 4-4M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg></div>
+        <div><h4>Identity verified</h4><p>Every member confirms their identity before joining a single conversation.</p></div>
+      </div>
+      <div class="value-card reveal d2">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 11.5a8.4 8.4 0 01-1.9 5.4 8.5 8.5 0 01-9.3 2.7L4 21l1.5-5.3A8.5 8.5 0 0119 5.1a8.4 8.4 0 012 6.4z"/></svg></div>
+        <div><h4>Respectful by design</h4><p>Our community guidelines are short, clear, and enforced without exception.</p></div>
+      </div>
+      <div class="value-card reveal d3">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg></div>
+        <div><h4>Private by default</h4><p>Contact details are never shared. Conversations happen through Kindly.</p></div>
+      </div>
+      <div class="value-card reveal d4">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3a15 15 0 010 18M12 3a15 15 0 000 18M3 12h18"/></svg></div>
+        <div><h4>Easy to report</h4><p>If something doesn't feel right, our team responds personally within hours.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED CONVERSATION ============ -->
+<section class="featured-section" id="featured">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:32px;">
+      <p class="eyebrow">Conversation of the week</p>
+      <h2 class="h2">A glimpse into a real exchange.</h2>
+    </div>
+    <div class="featured-card reveal d1">
+      <div class="featured-img">
+        <span class="featured-badge">Featured</span>
+        <img src="https://picsum.photos/seed/kindly-featured/800/900" alt="Two people sitting together outdoors, mid-conversation and smiling" loading="lazy">
+      </div>
+      <div class="featured-body">
+        <p class="featured-topic">Topic: Career &amp; second chapters</p>
+        <p class="featured-quote">"I hadn't expected to learn so much from someone twenty years older than me — about risk, mostly, and when it's worth taking one."</p>
+        <div class="featured-people-imgs">
+          <img src="https://picsum.photos/seed/kindly-avatar-4/100/100" alt="">
+          <img src="https://picsum.photos/seed/kindly-avatar-1/100/100" alt="">
+        </div>
+        <p class="featured-names">Daniel, 29 &amp; Patricia, 58</p>
+        <p class="featured-meta">Connected through Kindly &middot; 52-minute conversation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats-section" id="community">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow" style="justify-content:center;">Community</p>
+      <h2 class="h2" style="max-width:540px;margin:0 auto;">A quiet, growing community of curious people.</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="reveal d1"><div class="stat-num" data-target="500">0</div><div class="stat-label">Members and counting</div></div>
+      <div class="reveal d2"><div class="stat-num" data-target="3">0</div><div class="stat-label">Countries represented</div></div>
+      <div class="reveal d3"><div class="stat-num" data-target="950">0</div><div class="stat-label">Conversations arranged</div></div>
+      <div class="reveal d4"><div class="stat-num" data-target="96">0</div><div class="stat-label">% would request another</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Stories</p>
+      <h2 class="h2">What our members say.</h2>
+    </div>
+  </div>
+  <div class="t-track-wrap reveal"><div class="t-track" id="t-track"></div></div>
+</section>
+
+<!-- ============ ARTICLES ============ -->
+<section class="articles-section" id="articles">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Conversation tips</p>
+      <h2 class="h2">Latest from the journal.</h2>
+    </div>
+    <div class="articles-grid">
+      <a href="article-seven-questions.html" class="article-card reveal d1">
+        <div class="article-img"><img src="https://picsum.photos/seed/kindly-step3-talking/500/400" alt="Two people in mid-conversation, smiling" loading="lazy"></div>
+        <p class="article-tag">Conversation tips</p>
+        <h3 class="article-title">Seven questions better than "how are you?"</h3>
+        <p class="article-excerpt">Small changes to how you open a conversation can lead somewhere far more interesting. We asked our most experienced listeners which opening lines actually get people talking, and collected the seven that work best.</p>
+        <span class="article-readmore">Read the full story &rarr;</span>
+      </a>
+      <a href="article-margaret-travel.html" class="article-card reveal d2">
+        <div class="article-img"><img src="https://picsum.photos/seed/kindly-tea-laugh/500/400" alt="An older man holding a mug, mid-laugh" loading="lazy"></div>
+        <p class="article-tag">Member stories</p>
+        <h3 class="article-title">The retired teacher who talks travel every Tuesday</h3>
+        <p class="article-excerpt">Why Margaret, 67, has arranged thirty conversations through Kindly — and counting. From a former art teacher in Edinburgh to a network of conversation partners across three countries.</p>
+        <span class="article-readmore">Read the full story &rarr;</span>
+      </a>
+      <a href="article-why-not-match.html" class="article-card reveal d3">
+        <div class="article-img"><img src="https://picsum.photos/seed/kindly-hero-window/500/400" alt="A woman by a window, smiling on a call" loading="lazy"></div>
+        <p class="article-tag">Inside Kindly</p>
+        <h3 class="article-title">Why we never call it a "match"</h3>
+        <p class="article-excerpt">A short note on language, and why Kindly was never built to be a dating platform. Every word on this site is chosen carefully, and this one especially.</p>
+        <span class="article-readmore">Read the full story &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="insta-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <p class="eyebrow" style="justify-content:center;">Follow along</p>
+      <h2 class="h2">@kindlyuk_ on Instagram</h2>
+    </div>
+    <div class="insta-grid reveal d1" id="insta-grid"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="reveal">
+        <p class="eyebrow">FAQs</p>
+        <h2 class="h2">Questions, answered.</h2>
+        <p class="sub" style="margin-top:14px;">Still curious? Write to us at <a href="mailto:hello@kindlyuk_" style="color:var(--forest-dark);font-weight:700;">hello@kindlyuk_</a></p>
+      </div>
+      <div class="faq-list reveal d1" id="faq-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-section">
+  <div class="cta-content reveal">
+    <p class="eyebrow" style="justify-content:center;">Ready?</p>
+    <h2 class="cta-headline">Your next great conversation is waiting to <em>be arranged.</em></h2>
+    <p class="cta-sub">Join hundreds of members already having the conversations they used to only have by accident.</p>
+    <button class="btn-hero" data-target="Get Started">Book your first conversation <span class="arrow">&rarr;</span></button>
+    <div class="cta-trust">
+      <div class="trust-item"><span class="trust-check">&#10003;</span> Free to join</div>
+      <div class="trust-item"><span class="trust-check">&#10003;</span> No card required</div>
+      <div class="trust-item"><span class="trust-check">&#10003;</span> Leave anytime</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Get Started ============ -->
+<section class="waitlist-section" id="Get Started">
+  <div class="container">
+    <div class="waitlist-inner">
+      <div class="reveal">
+        <p class="eyebrow" style="color:var(--sage);">Get Started</p>
+        <h2 class="waitlist-headline">Be among the first to experience <em>Kindly.</em></h2>
+        <p class="waitlist-sub">We're welcoming new members in small, carefully arranged waves. Get started and we'll be in touch when it's your turn.</p>
+        <div class="waitlist-perks">
+          <div class="waitlist-perk"><span class="perk-check">&#10003;</span> Priority access </div>
+          <div class="waitlist-perk"><span class="perk-check">&#10003;</span> Choose your preferr ed conversation topics</div>
+          <div class="waitlist-perk"><span class="perk-check">&#10003;</span> A personal introduction, never an automated one</div>
+          <div class="waitlist-perk"><span class="perk-check">&#10003;</span> A founding member mark on your profile</div>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <div class="form-glass">
+          <div class="form-progress">
+            <div class="form-progress-seg active" data-step-indicator="1"></div>
+            <div class="form-progress-seg" data-step-indicator="2"></div>
+            <div class="form-progress-seg" data-step-indicator="3"></div>
+          </div>
+          <form id="waitlist-form" novalidate>
+            <div class="form-row">
+              <div class="fl-group">
+                <input class="fl-input" type="text" name="first_name" placeholder=" " required>
+                <label class="fl-label">First name</label>
+              </div>
+              <div class="fl-group">
+                <input class="fl-input" type="text" name="last_name" placeholder=" " required>
+                <label class="fl-label">Last name</label>
+              </div>
+            </div>
+            <div class="fl-group">
+              <input class="fl-input" type="email" name="email" placeholder=" " required id="wl-email">
+              <label class="fl-label">Email address</label>
+              <div class="fl-check" id="wl-email-check"></div>
+            </div>
+            <div class="form-row">
+              <div class="fl-group" style="margin-bottom:0;">
+                <span class="fl-select-label">Country</span>
+                <select class="form-select" name="country" required>
+                  <option value="">Select country</option>
+                  <option value="GB">England</option>
+                  <option value="CA">Scotland</option>
+                  <option value="AU">Wales</option>
+                  <option value="IE">Ireland</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="fl-group" style="margin-bottom:0;">
+                <span class="fl-select-label">Age range</span>
+                <select class="form-select" name="age" required>
+                  <option value="">Select range</option>
+                  <option>18–25</option><option>26–35</option><option>36–50</option><option>51–65</option><option>65+</option>
+                </select>
+              </div>
+            </div>
+            <div class="fl-group" style="margin-top:16px;">
+              <input class="fl-input" type="text" name="interests" placeholder=" ">
+              <label class="fl-label">Topics you'd like to talk about</label>
+            </div>
+            <div class="form-checkbox" style="margin-top:6px;">
+              <input type="checkbox" id="consent" name="consent" required>
+              <span>I agree to Kindly's <a href="#" style="color:var(--sage);">Privacy Policy</a> and <a href="#" style="color:var(--sage);">Terms of Service</a> *</span>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <span>Send me occasional conversation tips and updates</span>
+            </div>
+            <button type="submit" class="btn-submit" id="wl-submit-btn">Reserve my spot &rarr;</button>
+            <p class="form-error" id="wl-error"></p>
+          </form>
+          <div class="form-success" id="form-success">
+            <div class="success-check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+            <h3>You're on the list.</h3>
+            <p>We'll reach out with your invitation shortly. Follow @kindlyuk_ for updates in the meantime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="h2">Get in touch. We're listening.</h2>
+        <p class="sub" style="margin-top:14px;">Have a question, a partnership idea, or just want to say hello? We read every message personally.</p>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+            <div><h4>Email us</h4><p>hello@kindlyuk_<br>We reply within one working day.</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div><h4>Based in</h4><p>London, United Kingdom<br>Serving members worldwide.</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+            <div><h4>Follow us</h4><p>@kindlyuk_ on Instagram &amp; TikTok<br>Stories and conversation prompts.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div>
+              <div><label class="c-label">Name *</label><input type="text" class="c-input" name="name" placeholder="Your name" required></div>
+              <div><label class="c-label">Email *</label><input type="email" class="c-input" name="email" placeholder="you@email.com" required></div>
+            </div>
+            <label class="c-label">Country</label>
+            <input type="text" class="c-input" name="country" placeholder="United Kingdom">
+            <label class="c-label">What's this about?</label>
+            <select class="c-input" name="reason" style="cursor:pointer;-webkit-appearance:none;appearance:none;">
+              <option value="">Select a reason</option>
+              <option>General enquiry</option><option>Press &amp; media</option><option>Partnership</option><option>Feedback</option><option>Something else</option>
+            </select>
+            <label class="c-label">Message *</label>
+            <textarea class="c-input" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+            <button type="submit" class="btn-contact">Send message &rarr;</button>
+            <p class="form-error" id="contact-error" style="color:var(--clay-dark);"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="footer-logo" data-nav>
+          <img src="images/kindly-logo-white.png" alt="Kindly" class="footer-logo-img">
+        </a>
+        <p class="footer-desc">Real conversations, arranged with care, around the topics that matter to you.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/kindlyuk_/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="social-link" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.31 6.31 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><button data-target="how-it-works">How It Works</button></li>
+          <li><button data-target="topics">Topics</button></li>
+          <li><button data-target="community">Community</button></li>
+          <li><button data-target="Get Started">Get Started</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Kindly</a></li>
+          <li><button data-target="articles">Journal</button></li>
+          <li><button data-target="contact">Contact</button></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Stay in touch</h4>
+        <p style="font-size:.875rem;color:rgba(255,255,255,.4);line-height:1.6;margin-bottom:0;">Conversation tips and community stories — no more than twice a month.</p>
+        <div class="newsletter-input-wrap">
+          <input type="email" class="newsletter-input" placeholder="your@email.com" aria-label="Newsletter email" id="footer-newsletter-input">
+          <button class="newsletter-btn" type="button" id="footer-newsletter-btn">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kindly Technologies Ltd. All rights reserved. Registered in England &amp; Wales.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Settings</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- topic modal -->
+<div class="topic-modal-overlay" id="topic-modal-overlay">
+  <div class="topic-modal" role="dialog" aria-modal="true" aria-labelledby="topic-modal-title">
+    <button class="topic-modal-close" id="topic-modal-close" aria-label="Close">&times;</button>
+    <div class="topic-modal-img"><img id="topic-modal-img" src="" alt=""></div>
+    <div class="topic-modal-body">
+      <h3 id="topic-modal-title"></h3>
+      <p id="topic-modal-desc"></p>
+      <button class="btn-hero" data-target="Get Started" style="width:100%;justify-content:center;" id="topic-modal-cta">Request this conversation &rarr;</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
